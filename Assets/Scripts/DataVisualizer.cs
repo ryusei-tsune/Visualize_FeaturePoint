@@ -20,9 +20,9 @@ public class DataVisualizer : MonoBehaviour
         {
             string line = reader.ReadLine();
             string[] str = line.Split(',');
-            float x = float.Parse(str[0])/100;
+            float x = float.Parse(str[0]);
             float y = float.Parse(str[1]);
-            float z = float.Parse(str[2])/100;
+            float z = float.Parse(str[2]);
             positions.Add(new Vector3(x, y, z));
         }
 
